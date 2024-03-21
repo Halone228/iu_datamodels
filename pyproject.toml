@@ -1,0 +1,16 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "iu_datamodels"
+version = "1.0.1"
+description = ""
+authors = [ "halone <haloneprog@gmail.com>",]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.6.4"
+click = "^8.1.7"
+toml = "^0.10.2"
