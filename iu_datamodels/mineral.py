@@ -1,6 +1,7 @@
 from .base import BaseModel
 from .source import *
 from datetime import datetime
+from fastapi import UploadFile
 
 
 class MineralBase(BaseModel):
@@ -15,6 +16,11 @@ class Mineral(MineralBase):
 
 class MineralAndSource(MineralBase):
     source: SourceFull
+
+
+class AttachmentRaw(BaseModel):
+    file: UploadFile
+    hash: str
 
 
 class Attachments(BaseModel):
