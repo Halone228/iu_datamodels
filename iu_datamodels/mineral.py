@@ -4,6 +4,9 @@ from datetime import datetime
 from fastapi import UploadFile
 
 
+attachment_id_type = str
+
+
 class MineralBase(BaseModel):
     id: int
     html_text: str
@@ -24,7 +27,7 @@ class AttachmentRaw(BaseModel):
 
 
 class Attachments(BaseModel):
-    attachments: list[str]
+    attachments: list[attachment_id_type]
 
 
 class MineralAndAttachments(Mineral, Attachments):
@@ -36,9 +39,10 @@ class MineralFull(MineralAndSource, Attachments):
 
 
 __all__ = [
-    'Mineral',
-    'MineralAndSource',
-    'MineralAndAttachments',
-    'MineralFull',
-    'AttachmentRaw'
+    "Mineral",
+    "MineralAndSource",
+    "MineralAndAttachments",
+    "MineralFull",
+    "AttachmentRaw",
+    "attachment_id_type",
 ]
