@@ -39,5 +39,6 @@ __all__ = [
     'Mineral',
     'MineralAndSource',
     'MineralAndAttachments',
-    'MineralFull'
+    'MineralFull',
+    'AttachmentRaw'
 ]
