@@ -11,6 +11,7 @@ class MineralBase(BaseModel):
     id: int
     html_text: str
     created_at: datetime
+    tags: list[int]
 
 
 class Mineral(MineralBase):
