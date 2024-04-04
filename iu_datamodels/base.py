@@ -2,6 +2,6 @@ from pydantic import BaseModel as bm, ConfigDict
 
 
 class BaseModel(bm):
-    config: ConfigDict = {
-        'from_attributes': True
-    }
+    model_config = ConfigDict(
+        from_attributes=True
+    )
