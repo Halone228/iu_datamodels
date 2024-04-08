@@ -3,11 +3,11 @@ from .vein import Vein
 
 
 class SourceBase(BaseModel):
-    uname: str
+    slug: str
     metadata: dict
 
 
-class SourceShort(BaseModel):
+class SourceShort(SourceBase):
     vein_id: int
 
 
