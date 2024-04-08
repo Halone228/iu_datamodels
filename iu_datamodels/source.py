@@ -21,7 +21,7 @@ class SourceFull(SourceBase):
 
 
 __all__ = [
-    'SourceBase'
+    'SourceBase',
     'Source',
     'SourceShort',
     'SourceFull'
