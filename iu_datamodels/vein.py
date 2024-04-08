@@ -12,7 +12,7 @@ class Vein(VeinShort):
     url: str
 
 
-
 __all__ = [
-    'Vein'
+    'Vein',
+    'VeinShort'
 ]

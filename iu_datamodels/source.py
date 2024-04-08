@@ -17,6 +17,7 @@ class SourceFull(SourceShort):
 
 
 __all__ = [
+    'Source',
     'SourceShort',
     'SourceFull'
 ]
