@@ -2,17 +2,17 @@ from .base import BaseModel
 from .vein import Vein
 
 
-class SourceBase(BaseModel):
+class SourceShort(BaseModel):
     id: int
     uname: str
     metadata: dict
 
 
-class SourceShort(SourceBase):
+class Source(SourceShort):
     vein_id: int
 
 
-class SourceFull(SourceBase):
+class SourceFull(SourceShort):
     vein: Vein
 
 
