@@ -47,6 +47,7 @@ class MineralFull(MineralAndSource, Attachments):
 
 
 __all__ = [
+    "MineralAndAttachmentsShort",
     "Mineral",
     "MineralAndSource",
     "MineralAndAttachments",
