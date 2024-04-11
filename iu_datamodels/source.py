@@ -4,7 +4,7 @@ from .vein import Vein
 
 class SourceBase(BaseModel):
     slug: str
-    metadata: dict
+    source_metadata: dict
 
 
 class SourceShort(SourceBase):
