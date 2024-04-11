@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "iu_datamodels"
-version = "4.2.0"
+version = "4.2.1"
 description = ""
 authors = [ "halone <haloneprog@gmail.com>",]
 readme = "README.md"
