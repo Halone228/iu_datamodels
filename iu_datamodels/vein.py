@@ -10,6 +10,7 @@ class Vein(VeinShort):
     id: int
     name: str
     url: str
+    slug: str
 
 
 __all__ = [
